@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>LOGIN PAGE</title>
+        <style>
+            * {
+                box-sizing: border-box;
+                -webkit-box-sizing: border-box;
+            }
+            fieldset{
+                width: 320px;
+                height: 350px;
+                text-align: center;
+                padding: 20px; 
+                background-color:#c4e0e7;
+                border: 0px;
+                border-radius: 20px;
+                margin: 0 auto;
+            }  
+            input{
+                border: 0px;
+                border-bottom: 1px solid #ddd;
+                width: 100%;
+                max-width: 100%;
+                padding: 10px 0px;
+            }
+            form{
+                margin: auto;
+                padding: 30px;
+            }   
+            h1{
+                text-align: center;
+                color:#af1e75;
+                
+            } 
+            body{
+                background-image: url(bgcolor.jpg);
+                background-repeat: no-repeat;
+                background-position: center;
+                padding: 100px;
+                background-size: cover;
+            }  
+            button{
+                margin-top: 50px;
+            }
+            .login:hover{
+                padding: 10px;
+                border-radius: 5px;
+                border: 0px;
+                background: #bf8686;
+                color: #fff;
+                background-color: deeppink;
+            }
+            .reset{
+                padding: 10px;
+                border-radius: 5px;
+                border: 0px;
+                background:#bf8686;
+                color: #ffff;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="j:\pro\home.html">
+                <fieldset> 
+                    <h1>Welcome!login</h1> 
+                    <strong>USER NAME:</strong>
+                <input type="text" name="username" maxlength="50" placeholder="Ex.Jana" required>
+                <strong>PASSWORD:</strong>
+                <input type="password" name="pass" maxlength="10"placeholder="Ex.123@" required>
+                <div class="button">
+                    <button class="login">LOGIN NOW</button>
+                </div>
+                </fieldset>  
+                <footer>
+                    <p>&copy; 2023 User Login Page</p>
+                </footer>
+        </form>
+    </body>
+</html>
