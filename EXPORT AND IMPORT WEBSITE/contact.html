@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>contact</title>
+        <style>
+             fieldset{
+                width: 320px;
+                height: 430px;
+                text-align: center;
+                padding: 20px; 
+                background-color:#7d65e7;
+                border: 0px;
+                border-radius: 20px;
+                margin: 0 auto;
+            }  
+        body{
+            background-image: url(Contact.jpg);
+            background-size: cover;
+            
+        }
+        label {
+                display: flex;
+                justify-content: center;
+                color:#55104c;
+                text-align: center;
+                padding:15px;
+                text-decoration: none;
+                font-size: 20px;
+            }
+            h1,form{
+                text-align: center;
+            }
+            button:hover{
+              background-color:deeppink;
+            }
+        </style>
+    </head>
+<body>
+    <header>
+        <h1>Contact Us - Import and Export Services</h1>
+    </header>
+    <div class="container">
+        <h2>Contact Information</h2>
+        <p>If you have any questions or inquiries related to our import and export services, please don't hesitate to get in touch with us. We are here to assist you.</p>
+        <fieldset>
+        <h2>Contact Form</h2>
+        <form action="reg.html" method="post">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea><br><br>
+<center><button>Send Message</button></center>
+        </form>
+    </div>
+</fieldset>
+</form>
+</body>
+    </html>
