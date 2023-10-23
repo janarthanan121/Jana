@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>REGISTRATION PAGE</title>
+        <style>
+        .wrapper
+        {
+          width: 420px;
+          background: transparent;
+          border: 2px solid rgb(146, 71, 75);
+          backdrop-filter: blur(9px);
+          color: #fff;
+          border-radius: 12px;
+          padding: 30px 40px;
+          text-align: center;
+        }
+       .input-box
+        {
+          position: relative;
+          width: 100%;
+          height: 50px;
+          margin: 30px 0;
+        }
+        .input-box input
+        {
+          width: 100%;
+          height: 100%;
+          background: transparent;
+          border: none;
+          outline: none;
+          border: 2px solid rgba(255, 255, 255, .2);
+          border-radius: 40px;
+          font-size: 16px;
+          color: #fff;
+          padding: 5px;
+        }
+        .input-box input::placeholder
+        {
+          color: #fff;
+        }
+        .remember-forgot
+        {
+         display: flex;
+         justify-content: space-between;
+         font-size: 14.5px;
+         margin: -15px 0 15px;
+        }
+        .remember-forgot label input
+        {
+         accent-color: #fff;
+         margin-right: 3px;
+        }
+        .remember-forgot a
+        {
+         color: #fff;
+         text-decoration: none;
+        }
+        .remember-forgot a:hover
+        {
+         text-decoration: underline;
+        }
+        .btn
+        {
+          width: 100%;
+          height: 45px;
+          background: #fff;
+          border: none;
+          outline: none;
+          border-radius: 40px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+          cursor: pointer;
+          font-size: 16px;
+          color: #333;
+          font-weight: 600;
+        }
+        .btn:hover{
+          background-color: cadetblue;
+        }
+        .register-link
+        {
+          font-size: 14.5px;
+          text-align: center;
+          margin: 20px 0 15px;
+        }
+        .register-link p a
+        {
+         color: #fff;
+         text-decoration: none;
+         font-weight: 600;
+        }
+        .register-link p a:hover
+        {
+          text-decoration: underline;
+        }
+        body
+        {
+           background-image: url(reg.jpg);
+           background-size: cover;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           min-height: 100vh;
+           background-position: center;
+        }
+        </style>
+    </head>
+    <body>
+      <script>
+        function validateform(){  
+var name=document.myform.name.value;  
+var password=document.myform.password.value;  
+  if (name==null || name==""){  
+  alert("Name can't be blank");  
+  return false;  
+}else if(password.length<6){  
+  alert("Password must be at least 6 characters long.");  
+  return false;  
+  }  
+}  
+</script>
+        <form name="myform" method="post" action="validate.php" onsubmit="return validateform()" >  
+                <div class="wrapper">
+                      <h1>Login</h1>
+                      <div class="input-box">
+                        <input type="text" placeholder="Username" name="name" required>
+                      </div>
+                      <div class="input-box" >
+                        <input type="password" placeholder="Password" name="password" required>
+                      </div>
+                      <div class="remember-forgot">
+                        <label><input type="checkbox">Remember Me</label>
+                      </div>
+                      <button type="submit" formaction="home.html" class="btn" onclick="validateform()">Login</button>
+                      <div class="register-link">
+                        <p>Dont have an account? <a href="register.html">Register</a></p>
+                      </div>
+                    </form>
+                </div>
+        </form>
+    </body>
+</html>

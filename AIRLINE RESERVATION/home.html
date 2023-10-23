@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Airline Reservation System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image:url(air.jpg)  ;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        header ,h1{
+            text-align: center;
+	        font-family:Brush Script MT, Brush Script Std, cursive;
+	        color: white;
+            font-size: 50px;
+            
+        } 
+        ul{
+            list-style-type: none;
+            display:block;
+            padding: 10px;
+            overflow: hidden;
+        }
+        li{
+            float:left;
+        } 
+        li a{
+            display: block;
+            justify-content: center;
+            color:#140505;
+            text-align: center;
+            padding:15px;
+            text-decoration: none;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .contain ul li a:hover{
+            background-color: crimson;
+        }
+        .drop{
+            float: right;
+        }
+        .hero {
+            text-align: center;
+            padding: 4rem 0;
+        }
+        .btn {
+            display: block;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            color: blue;
+        }
+        .features {
+            display: flex;
+            justify-content: space-around;
+            padding: 4rem 0;
+        }
+        .feature {
+            text-align: center;
+        }
+        .feature img {
+            width: 80px;
+            height: 80px;
+        }
+        h1,p{
+            color: azure;
+        }
+        .ton{
+            color: blue;
+            font-family: 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+<body>
+<form action="home.html">
+<div class="contain">
+    <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="Flights.html">Flights</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+        <li class="drop"><a href="login.html">Login/Register</a></li>
+    </ul>
+    <header>
+        <h1 class="ton">Airline-Reservation System</h1>
+        <h1>Your Experiences Start Here!!!</h1>
+    </header>
+    <section class="hero">
+        <h2>Find Your Perfect Flight</h2>
+        <p>Book your flights with ease and convenience.</p>
+        <a href="Booking.html" class="btn"><strong>Book Now</strong></a>
+    </section>
+    <section class="features">
+        <div class="feature">
+            <img src="icon1.png" alt="Icon 1">
+            <h3>Easy Booking</h3>
+            <p>Book your flights in just a few clicks.</p>
+        </div>
+        <div class="feature">
+            <img src="icon2.png" alt="Icon 2">
+            <h3>Wide Range of Destinations</h3>
+            <p>Explore our extensive list of destinations.</p>
+        </div>
+        <div class="feature">
+            <img src="icon3.png" alt="Icon 3">
+            <h3>Secure Payments</h3>
+            <p>Your payments are safe and secure with us.</p>
+        </div>
+    </section>
+</div>
+</form>
+</body>
+</html>
